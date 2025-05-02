@@ -1,0 +1,1 @@
+const testString: string = "Hallo Test Mama"
