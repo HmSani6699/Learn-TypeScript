@@ -32,9 +32,20 @@ let nul: null = null;
 
 // List of Non Primitive Data Types in TypeScript
 
-// 1.Object
-// 2.Array
+// 1.Array
+// 2.Object
 // 3.Function
+
+// Array
+
+const arr: number[] = [1, 2, 3, 4, 5, 6];
+
+
+let arr1: [number, string] = [12,"Hello"];
+
+arr1[0] = 56;
+
+const arr2 : Array<number> = [45,56]
 
 
 
