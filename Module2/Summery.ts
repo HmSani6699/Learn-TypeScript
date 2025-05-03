@@ -65,9 +65,18 @@
         roll: 456,
     };
 
+    //====================>  2.3 Generics tpe < ====================//
+    
+    type GenericsArray<T> = Array<T>
 
+    // const numArry: number[] = [1, 2, 3, 4, 5];
+    const numArry: GenericsArray<number> = [1, 2, 3, 4, 5];
 
-
+    // const stringArry: string[] = ["Sadiq", "Noman"];
+    const stringArry: GenericsArray<string>= ["Sadiq", "Noman"];
+    
+    // const booleanArry: boolean[] = [true,false ,];
+    const booleanArry: GenericsArray<boolean> = [true,false ,];
 
 
 }
