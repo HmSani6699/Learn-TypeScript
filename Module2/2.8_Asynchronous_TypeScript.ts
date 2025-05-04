@@ -3,9 +3,9 @@
 
     // Asynchronous Typescript Example
 
-    const createPromise = () => {
-        return  new Promise((resolve, reject) => {
-            const data: string = "Hallo";
+    const createPromise = (): Promise<boolean> => {
+        return  new Promise<boolean>((resolve, reject) => {
+            const data: boolean = true;
 
             if (data) {
                 resolve(data);
@@ -16,11 +16,13 @@
         })
     }
 
-    const result =async () => {
-        const data = await createPromise();
+    const result =async ():Promise<boolean> => {
+        const data:boolean = await createPromise();
         console.log(data);
-        
+        return data
     }
+
+    result()
 
 
 
