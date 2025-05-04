@@ -29,9 +29,24 @@
         }
     }
 
-    const student1 = admissionStudent <{name:string,age:number}> ({name:"Sadiq", age:23})
+    const student1 = admissionStudent<{ name: string, age: number }>({ name: "Sadiq", age: 23 })
+    
 
 
 
 
+
+    const sum = <Num1,Num2> (num1: Num1, num2: Num2) => { return [num1, num2] };
+
+    const result1  = sum <number,number >(1,2)
+
+
+
+
+
+
+
+
+
+//
 }

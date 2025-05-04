@@ -18,8 +18,20 @@
 
 
 
+    const constraintRecap = <T , K extends keyof T > ( obj:T, key:K) => {
+        return obj[key];
+    }
+
+    const result4 = constraintRecap <{name:string,email:string,contact:number}, "contact"> ({name:"Sadiq",email:"Sadiq@gamil.com",contact:435345},"contact")
 
 
 
 
+
+
+
+
+
+
+    //
 }

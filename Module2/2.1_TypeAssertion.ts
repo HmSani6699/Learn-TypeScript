@@ -45,5 +45,12 @@
     console.log(log);
     
 
+
+
+    let number=34;
+
+    const newNumber = (number as number);
+    
+
 //
 }

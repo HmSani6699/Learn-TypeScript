@@ -81,5 +81,21 @@
 
 
 
+
+    interface Student {
+        name: string;
+        age: number;
+        email: string;
+    }
+
+    interface Student1 extends Student { role: string };
+
+    const createNewStudent: Student1 = {
+        name: 'sadiw',
+        age: 23,
+        email: "sadi@gmail.com",
+        role:"admin"
+    }
+
     //
 }
