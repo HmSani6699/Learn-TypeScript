@@ -58,7 +58,71 @@
     const cat = new Cat("Cat Mama", "Cat");
 
     
-     getAnimal(dog)
+    // getAnimal(dog)
+    
+
+
+
+
+    class Man {
+        name: string;
+        makeSound: string;
+        constructor(name: string,makeSound:string) {
+            this.name = name;
+            this.makeSound = makeSound;
+        }
+        getSound(){
+        console.log(`I'm not  man so i collecd po po 😍`);
+        }
+    }
+
+    class Male extends Man {
+        constructor(name: string, makeSound: string) {
+            super(name,makeSound)
+        }
+        maleSound() {
+            console.log(`This is ${this.name} and im a ${this.makeSound} !`);
+        }
+    }
+
+    class Female extends Man {
+        constructor(name: string, makeSound: string) {
+            super(name,makeSound)
+        }
+        femaleSound() {
+            console.log(`This is ${this.name} and im a ${this.makeSound} !`);
+        }
+    }
+
+
+    const isMale = (man:Man) => {
+        return man instanceof Male;
+    }
+    const isFemale = (man:Man) => {
+        return man instanceof Female;
+    }
+
+
+    const getColl = (man: Man) => {
+        
+        if (isMale(man)) {
+           man.maleSound()
+        } else if (isFemale(man)) {
+            man.femaleSound()
+        } else {
+            man.getSound()
+        }
+        
+    }
+
+    const male: Male = new Male("Sadiq", "Man");
+    const female: Female = new Female("Adiba", "Female");
+    
+
+  getColl(female)
+    
+
+
 
 
     //
